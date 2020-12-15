@@ -4,7 +4,7 @@ describe('webdriver.io page', () => {
   it('should have the right title', () => {
     browser.url('');
     const title = browser.getTitle();
-    assert.strictEqual(title, 'AngularWdio6BuilderDemo')
+    expect(title).toEqual('AngularWdio6BuilderDemo');
   })
   it('should say app is running', () => {
     browser.url('');
